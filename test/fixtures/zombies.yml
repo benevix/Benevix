@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  bio: MyText
+  apodrecendo: false
+  salario: 9.99
+  idade: 1
+  nascimento: 2019-10-24 17:59:16
+  zombification: 2019-10-24
+
+two:
+  nome: MyString
+  bio: MyText
+  apodrecendo: false
+  salario: 9.99
+  idade: 1
+  nascimento: 2019-10-24 17:59:16
+  zombification: 2019-10-24

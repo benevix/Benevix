@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tweets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Zombie</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tweets.each do |tweet| %>
+      <tr>
+        <td><%= tweet.zombie_id %></td>
+        <td><%= tweet.status %></td>
+        <td><%= link_to 'Show', tweet %></td>
+        <td><%= link_to 'Edit', edit_tweet_path(tweet) %></td>
+        <td><%= link_to 'Destroy', tweet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+    
+  </tbody>
+</table>
+    <% if @tweets.size == 0 %>
+      <em> Não hã Tweets </em>
+    <% end %>
+<br><br>
+
+<%= link_to 'New Tweet', new_tweet_path %>

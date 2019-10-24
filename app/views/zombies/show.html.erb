@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @zombie.nome %>
+</p>
+
+<p>
+  <strong>Bio:</strong>
+  <%= @zombie.bio %>
+</p>
+
+<p>
+  <strong>Apodrecendo:</strong>
+  <%= @zombie.apodrecendo %>
+</p>
+
+<p>
+  <strong>Salario:</strong>
+  <%= @zombie.salario %>
+</p>
+
+<p>
+  <strong>Idade:</strong>
+  <%= @zombie.idade %>
+</p>
+
+<p>
+  <strong>Nascimento:</strong>
+  <%= @zombie.nascimento %>
+</p>
+
+<p>
+  <strong>Zombification:</strong>
+  <%= @zombie.zombification %>
+</p>
+
+<%= link_to 'Edit', edit_zombie_path(@zombie) %> |
+<%= link_to 'Back', zombies_path %>
